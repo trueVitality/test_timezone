@@ -1,0 +1,9 @@
+<main class="main">
+  <h1>Timezone</h1>
+  <section>
+      <div class="example-button-row">
+        <button mat-button (click)="openDialog()">Add Timezone</button>
+      </div>
+      <app-table [dataSource]="dataSource" (action)="deleteTimezone($event)"></app-table>
+  </section>
+</main>

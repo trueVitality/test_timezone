@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Timezones Angular</h2>
+<mat-dialog-content class="mat-typography">
+  <mat-list role="list">
+    @for (timezone of timezones; track timezone) {
+      <mat-list-item role="listitem">
+        <div class="list-container">
+          <div class="timezone-name">{{timezone}}</div> 
+          <button class="action-button" [mat-dialog-close]="timezone" mat-button style="margin-left: 50px;">Add</button>  
+        </div>
+       </mat-list-item>
+    }
+  </mat-list>
+</mat-dialog-content>
+

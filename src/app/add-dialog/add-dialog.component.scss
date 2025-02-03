@@ -1,0 +1,15 @@
+h1 { background: #E60000; color: white; }
+
+
+.list-container {
+    display: flex;
+    justify-content: space-between;
+    
+    .timezone-name {
+        display: flex;
+    }
+    
+    .action-button {
+        display: flex;
+    }
+}
